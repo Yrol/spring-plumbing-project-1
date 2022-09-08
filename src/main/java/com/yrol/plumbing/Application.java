@@ -6,12 +6,13 @@ import com.yrol.plumbing.car.Doors;
 import com.yrol.plumbing.car.Engine;
 import com.yrol.plumbing.car.Tyres;
 import com.yrol.plumbing.document.Document;
+import com.yrol.utils.BallService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.yrol.plumbing", "com.yrol.utils"})
 public class Application {
 
 	/**
@@ -35,6 +36,13 @@ public class Application {
 	 * */
 	@Autowired
 	Document document;
+
+	/**
+	 * Method:3 of DI
+	 * Using a service defined in another package: com.yrol.utils
+	 * */
+	@Autowired
+	BallService ballService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
