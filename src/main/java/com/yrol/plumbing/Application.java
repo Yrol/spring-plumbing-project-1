@@ -53,7 +53,7 @@ public class Application {
 	BallService ballService;
 
 	/**
-	 * Method:4 of DI - Setter injection
+	 * Method:4 of DI - Setter injection (setComputer)
 	 * A Bean must be set - see newComputer below
 	 * Must use @Autowired (try debug without)
 	 * */

@@ -1,7 +1,7 @@
 # Spring Plumbing Project
-A playground for testing Spring Dependancy Injection (DI) using different methods. Most of the DI has been done within `Application.java`.
+A playground for testing Spring Dependency Injection (DI) / adding Beans to the Spring Context using different methods. Most of the DI has been done within `Application.java`.
 
-### DI has been acheived via:
+### DI has been achieved via:
 
 * Field injection
 * Configuration class
